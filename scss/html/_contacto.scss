@@ -1,0 +1,64 @@
+@import"../utilidades/variables";
+
+main{
+    .div-contacto{
+        display: flex;
+        flex-direction: column-reverse; 
+    } 
+    .logo-contacto{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 30%;
+        }
+    }
+    .form-contacto{
+        color: $color-1;
+        border-radius: 2%;
+        margin: 1rem;
+        padding: 1rem;
+        backdrop-filter: blur(5px);
+        border-style: solid; 
+    }
+    .formulario-contacto{
+        display: flex;
+        justify-content: center;
+        .botones-contacto{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .area-contacto{
+            display: flex;
+            justify-content: center; 
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    main{
+        .div-contacto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-contacto{
+            display: flex;
+            justify-content: center;
+            color: $color-1;
+            width: 40%;
+            border-radius: 2%;
+            margin: 1rem;
+            padding: 1rem;
+            backdrop-filter: blur(5px);
+            border-style: solid;
+            legend{
+                color: red;
+            }
+            .texto-contacto{
+                color: red;
+            }
+        }
+    }
+}

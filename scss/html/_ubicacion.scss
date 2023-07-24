@@ -1,0 +1,27 @@
+main{
+    .div-ubicacion{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .mapa-ubicacion{
+        display: flex;
+        justify-content: center;
+        margin: 1rem; 
+    }
+    .logo-ubicacion{
+        display: flex;
+        justify-content: center;
+        img{
+          width: 50%;   
+      }  
+      }
+}
+
+@media screen and (min-width:1024px){
+    main{
+        .div-ubicacion{
+            display: flex;
+            flex-direction: column;
+        }    
+    }
+}

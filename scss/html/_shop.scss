@@ -1,0 +1,36 @@
+main{
+    .div-shop{
+        display: flex;
+        flex-direction: column; 
+    }
+    .logo-shop{
+        display: flex;
+        justify-content: center;
+        img{
+         width: 60%;  
+        }
+    }
+    .contenedor-shop{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 1rem; 
+    }
+}
+
+@media screen and (min-width:1024px){
+    main{
+        .contenedor-shop{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-bottom: 3rem;
+        } 
+        .logo-shop{
+            img{
+                width: 40%;  
+            }
+        }
+    }
+}

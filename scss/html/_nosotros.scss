@@ -1,0 +1,62 @@
+@import"../utilidades/variables";
+
+main{
+    .contenedor-nosotros{
+        color: $color-1;
+        border-radius: 2%;
+        margin: 1rem;
+        display: flex;
+        padding: 1rem;
+        backdrop-filter: blur(5px);
+        border-style: solid;
+        h2{
+            text-decoration: underline;   
+        }
+        
+    }
+    .contenedor-nosotros-1{
+        display: none;
+       
+
+
+    }
+    .logo-nosotros{
+        display: flex;
+        justify-content: center;
+        margin: 0.2rem;
+        img{
+            width: 100%;  
+        }
+    }
+    .div-nosotros{
+        gap: 3rem;
+        display: flex;
+        flex-direction: column; 
+        .fotos-nosotros{
+            display: flex;
+            margin: 1rem;
+            padding: 1rem;
+        } 
+    }
+}
+
+@media screen and (min-width:1024px){
+    main{
+        .div-nosotros{
+            .fotos-nosotros{
+                display: none;
+            }
+        }
+        .contenedor-nosotros-1{
+            margin: 1rem;
+            display: flex;
+        img{
+            border-radius: 2%;
+            width: 99%;  
+        }
+           
+    
+    
+        }
+    }
+}
